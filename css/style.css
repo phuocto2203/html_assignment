@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 3rem 0 3rem;
+}
+.container .heading {
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+.container .signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .signup-form .text-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid #ececec;
+}
+.container .signup-form .text-input:focus {
+  outline: none;
+  border: 0.8px #95c7f0 solid;
+  box-shadow: 0px 0px 3px 1px #95c7f0;
+}
+.container .signup-form .text-input::-moz-placeholder {
+  color: #999999;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .signup-form .text-input:-ms-input-placeholder {
+  color: #999999;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .signup-form .text-input::placeholder {
+  color: #999999;
+  font-weight: 550;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container .signup-form .name-input {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.container .signup-form .name-input__firstname, .container .signup-form .name-input__lastname {
+  flex: 1;
+}
+.container .signup-form .password-input {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+.container .signup-form .password-input__password, .container .signup-form .password-input__confirmed-password {
+  flex: 1;
+}
+.container .signup-form .agreement-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.container .signup-form .agreement-input {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+.container .signup-form .agreement-input label {
+  font-weight: bold;
+  font-size: 17px;
+}
+.container .signup-form .agreement-text {
+  flex: 7;
+  font-size: 15px;
+  line-height: 25px;
+}
+.container .signup-form .agreement-text .register-link {
+  padding: 3px 7px;
+  background-color: #428bca;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.container .signup-form .agreement-text .agreement-link {
+  color: #428bca;
+  text-decoration: none;
+}
+.container .signup-form .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.container .signup-form .buttons button {
+  flex: 1;
+  padding: 16px 0;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .signup-form .buttons button:nth-child(1) {
+  background-color: #428bca;
+}
+.container .signup-form .buttons button:nth-child(2) {
+  background-color: #5cb85c;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 3rem 0 3rem;
+
+  .heading {
+    font-size: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+  }
+
+  .signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .text-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 2px solid #ececec;
+      &:focus {
+        outline: none;
+        border: 0.8px #95c7f0 solid;
+        box-shadow: 0px 0px 3px 1px #95c7f0;
+      }
+      &::placeholder {
+        color: #999999;
+        font-weight: 550;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    }
+
+    .name-input {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      &__firstname,
+      &__lastname {
+        flex: 1;
+      }
+    }
+
+    .password-input {
+      width: 100%;
+      display: flex;
+      gap: 15px;
+
+      &__password,
+      &__confirmed-password {
+        flex: 1;
+      }
+    }
+
+    .agreement {
+      &-container {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+      &-input {
+        flex: 2;
+        display: flex;
+        align-items: center;
+        label {
+          font-weight: bold;
+          font-size: 17px;
+        }
+      }
+      &-text {
+        flex: 7;
+        font-size: 15px;
+        line-height: 25px;
+        .register-link {
+          padding: 3px 7px;
+          background-color: #428bca;
+          color: white;
+          font-weight: 500;
+          text-decoration: none;
+          border-radius: 3px;
+        }
+        .agreement-link {
+          color: #428bca;
+          text-decoration: none;
+        }
+      }
+    }
+    .buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+
+      button {
+        flex: 1;
+        padding: 16px 0;
+        color: white;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &:nth-child(1) {
+          background-color: #428bca;
+        }
+        &:nth-child(2) {
+          background-color: #5cb85c;
+        }
+      }
+    }
+  }
+}
