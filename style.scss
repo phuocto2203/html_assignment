@@ -9,9 +9,9 @@
   align-items: center;
 }
 .container {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
+  @media screen and(max-width: 800px) {
+    max-width: 500px;
+  }
   margin: 3rem 3rem 0 3rem;
 
   .heading {
@@ -44,17 +44,17 @@
       }
     }
 
-    .name-input {
+    &__name-input {
       width: 100%;
       display: flex;
       gap: 15px;
-      &__firstname,
-      &__lastname {
+      &__firstname-input,
+      &__lastname-input {
         flex: 1;
       }
     }
 
-    .password-input {
+    &__password-input {
       width: 100%;
       display: flex;
       gap: 15px;
@@ -65,7 +65,7 @@
       }
     }
 
-    .agreement {
+    &__agreement {
       &-container {
         display: flex;
         gap: 2rem;
@@ -99,7 +99,7 @@
         }
       }
     }
-    .buttons {
+    &__buttons {
       width: 100%;
       display: flex;
       justify-content: center;

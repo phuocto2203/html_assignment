@@ -10,10 +10,12 @@
 }
 
 .container {
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
   margin: 3rem 3rem 0 3rem;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 500px;
+  }
 }
 .container .heading {
   font-size: 35px;
@@ -53,43 +55,43 @@
   font-weight: 550;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container .signup-form .name-input {
+.container .signup-form__name-input {
   width: 100%;
   display: flex;
   gap: 15px;
 }
-.container .signup-form .name-input__firstname, .container .signup-form .name-input__lastname {
+.container .signup-form__name-input__firstname-input, .container .signup-form__name-input__lastname-input {
   flex: 1;
 }
-.container .signup-form .password-input {
+.container .signup-form__password-input {
   width: 100%;
   display: flex;
   gap: 15px;
 }
-.container .signup-form .password-input__password, .container .signup-form .password-input__confirmed-password {
+.container .signup-form__password-input__password, .container .signup-form__password-input__confirmed-password {
   flex: 1;
 }
-.container .signup-form .agreement-container {
+.container .signup-form__agreement-container {
   display: flex;
   gap: 2rem;
   align-items: center;
   margin-bottom: 15px;
 }
-.container .signup-form .agreement-input {
+.container .signup-form__agreement-input {
   flex: 2;
   display: flex;
   align-items: center;
 }
-.container .signup-form .agreement-input label {
+.container .signup-form__agreement-input label {
   font-weight: bold;
   font-size: 17px;
 }
-.container .signup-form .agreement-text {
+.container .signup-form__agreement-text {
   flex: 7;
   font-size: 15px;
   line-height: 25px;
 }
-.container .signup-form .agreement-text .register-link {
+.container .signup-form__agreement-text .register-link {
   padding: 3px 7px;
   background-color: #428bca;
   color: white;
@@ -97,17 +99,17 @@
   text-decoration: none;
   border-radius: 3px;
 }
-.container .signup-form .agreement-text .agreement-link {
+.container .signup-form__agreement-text .agreement-link {
   color: #428bca;
   text-decoration: none;
 }
-.container .signup-form .buttons {
+.container .signup-form__buttons {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 25px;
 }
-.container .signup-form .buttons button {
+.container .signup-form__buttons button {
   flex: 1;
   padding: 16px 0;
   color: white;
@@ -116,9 +118,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.container .signup-form .buttons button:nth-child(1) {
+.container .signup-form__buttons button:nth-child(1) {
   background-color: #428bca;
 }
-.container .signup-form .buttons button:nth-child(2) {
+.container .signup-form__buttons button:nth-child(2) {
   background-color: #5cb85c;
 }/*# sourceMappingURL=style.css.map */
